@@ -2,8 +2,8 @@
     max-width: 100vw;
 }
 
-.input-field>label {
-    /* font-size: 0.8rem; */
+input {
+    transform: translate(10px); /*Exp1a - this & ...*/
 }
 
 form {
@@ -15,9 +15,9 @@ form {
 }
 
 .LnHofEachField{
-    padding-left: 10px;
+    padding-left: 10px; /*Exp1b - ... this both are for slightly moving to the right so elements don't stick to left edge */
 }
 
 .ansField{
-    font-weight: bold;
+    font-weight: bold; 
 }
