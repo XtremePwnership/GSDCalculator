@@ -1,12 +1,12 @@
-body { /* this helps in preventing that horizontal teeny scroll that inadvertetntly crops up */
-    
+.row,label { /* these two were overlowing to cause tiny horizontal scroll, so doing this */
+    max-width: 100vw;
 }
 
 .input-field>label {
     /* font-size: 0.8rem; */
 }
 
-.row {
+form {
     background-color: lightgray;
 }
 
