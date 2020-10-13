@@ -3,7 +3,7 @@ body { /* this helps in preventing that horizontal teeny scroll that inadvertetn
 }
 
 .input-field>label {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
 }
 
 .row {
