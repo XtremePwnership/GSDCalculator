@@ -11,47 +11,54 @@
     <div class="justGivingLeftRightMargins">
     <form class="col s12">
         <div class="row">
-            <div class="input-field col s3">
+            <div class="input-field col s4">
                 <input id="sensorWidth" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
                 <label class="LnHofEachField" for="sensorWidth">Sensor Width</label>
                 <span class="helper-text LnHofEachField">mm</span>
             </div>
-            <div class="input-field col s3">
+            <div class="input-field col s4">
                 <input id="focalLength" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
                 <label class="LnHofEachField" for="focalLength">Focal Length</label>
                 <span class="helper-text LnHofEachField">mm</span>
             </div>
-            <div class="input-field col s3">
+            <div class="input-field col s4">
                 <input id="flightHeight" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
                 <label class="LnHofEachField" for="flightHeight">Flight Height</label>
                 <span class="helper-text LnHofEachField">metre</span>
             </div>
-            <div class="input-field col s3">
+        </div>
+        <div class="row">
+            <div class="input-field col s4">
                 <input id="imageWidth" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
                 <label class="LnHofEachField" for="imageWidth">Image Width</label>
                 <span class="helper-text LnHofEachField">pixel</span>
             </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s3">
+            <div class="input-field col s4">
                 <input id="imageHeight" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
                 <label class="LnHofEachField" for="imageHeight">Image Height</label>
                 <span class="helper-text LnHofEachField">pixel</span>
             </div>
-            <div class="input-field col s3">
+            <div class="input-field col s4">
                 <input id="siteWidth" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
                 <label class="LnHofEachField" for="siteWidth">Site Width</label>
                 <span class="helper-text LnHofEachField">metre</span>
             </div>
-            <div class="input-field col s3">
+        </div>
+        <div class="row">
+            <div class="input-field col s4">
                 <input id="siteHeight" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
                 <label class="LnHofEachField" for="siteHeight">Site Height</label>
                 <span class="helper-text LnHofEachField">metre</span>
             </div>
-            <div class="input-field col s3">
+            <div class="input-field col s4">
                 <input id="speed" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
                 <label class="LnHofEachField" for="speed">Speed</label>
-                <span class="helper-text LnHofEachField">m/s</span>
+                <span class="helper-text LnHofEachField">kph</span>
+            </div>
+            <div class="input-field col s4">
+                <input id="photoOverlap" step="0.000000000001" type="number" value="20" class="validate" onkeyup="calculate()">
+                <label class="LnHofEachField" for="photoOverlap">Photo Overlap</label>
+                <span class="helper-text LnHofEachField">percentage</span>
             </div>
         </div>
         <div class="row answersRow">
@@ -63,6 +70,11 @@
             <div class="input-field col s4">
                 <input disabled placeholder="" id="dw" type="number" class="ansField validate">
                 <label class="LnHofEachField" for="dw">Dw</label>
+                <span class="helper-text LnHofEachField">metre</span>
+            </div>
+            <div class="input-field col s4">
+                <input disabled placeholder="" id="dh" type="number" class="ansField validate">
+                <label class="LnHofEachField" for="dh">Dh</label>
                 <span class="helper-text LnHofEachField">metre</span>
             </div>
             <div class="input-field col s4">
