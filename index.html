@@ -12,45 +12,62 @@
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s3">
-                    <input id="last_name" step="0.000000000001" type="number" class="validate">
-                    <label for="last_name">Sensor Width</label>
+                    <input id="sensorWidth" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
+                    <label for="sensorWidth">Sensor Width</label>
                     <span class="helper-text">mm</span>
                 </div>
                 <div class="input-field col s3">
-                    <input id="last_name" step="0.000000000001" type="number" class="validate">
-                    <label for="last_name">Focal Length</label>
+                    <input id="focalLength" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
+                    <label for="focalLength">Focal Length</label>
                     <span class="helper-text">mm</span>
                 </div>
                 <div class="input-field col s3">
-                    <input id="last_name" step="0.000000000001" type="number" class="validate">
-                    <label for="last_name">Flight Height</label>
+                    <input id="flightHeight" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
+                    <label for="flightHeight">Flight Height</label>
                     <span class="helper-text">metre</span>
                 </div>
                 <div class="input-field col s3">
-                    <input id="last_name" step="0.000000000001" type="number" class="validate">
-                    <label for="last_name">Speed</label>
-                    <span class="helper-text">m/s</span>
+                    <input id="imageWidth" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
+                    <label for="imageWidth">Image Width</label>
+                    <span class="helper-text">pixel</span>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s3">
-                    <input id="last_name" step="0.000000000001" type="number" class="validate">
-                    <label for="last_name">Image Width</label>
+                    <input id="imageHeight" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
+                    <label for="imageHeight">Image Height</label>
                     <span class="helper-text">pixel</span>
                 </div>
                 <div class="input-field col s3">
-                    <input id="last_name" step="0.000000000001" type="number" class="validate">
-                    <label for="last_name">Image Height</label>
-                    <span class="helper-text">pixel</span>
-                </div>
-                <div class="input-field col s3">
-                    <input id="last_name" step="0.000000000001" type="number" class="validate">
-                    <label for="last_name">Site Width</label>
+                    <input id="siteWidth" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
+                    <label for="siteWidth">Site Width</label>
                     <span class="helper-text">metre</span>
                 </div>
                 <div class="input-field col s3">
-                    <input id="last_name" step="0.000000000001" type="number" class="validate">
-                    <label for="last_name">Site Height (m)</label>
+                    <input id="siteHeight" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
+                    <label for="siteHeight">Site Height</label>
+                    <span class="helper-text">metre</span>
+                </div>
+                <div class="input-field col s3">
+                    <input id="speed" step="0.000000000001" type="number" class="validate" onkeyup="calculate()">
+                    <label for="speed">Speed</label>
+                    <span class="helper-text">m/s</span>
+                </div>
+            </div>
+            <div class="row answersRow">
+                <div class="input-field col s4">
+                    <input disabled placeholder="" id="gsd" type="number" class="ansField validate">
+                    <label for="gsd">GSD</label>
+                    <span class="helper-text">cm/pixel</span>
+                </div>
+                <div class="input-field col s4">
+                    <input disabled placeholder="" id="dw" type="number" class="ansField validate">
+                    <label for="dw">Dw</label>
+                    <span class="helper-text">metre</span>
+                </div>
+                <div class="input-field col s4">
+                    <input disabled placeholder="" id="dh" type="number" class="ansField validate">
+                    <label for="dh">Dh</label>
                     <span class="helper-text">metre</span>
                 </div>
             </div>
@@ -60,5 +77,6 @@
 <footer>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
 </footer>
 </html>
