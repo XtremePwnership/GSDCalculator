@@ -4,6 +4,7 @@
 
 input {
     transform: translate(10px); /*Exp1a - this & ...*/
+    font-size: 25px;
 }
 
 .input-field>label{
