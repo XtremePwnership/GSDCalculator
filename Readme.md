@@ -1,0 +1,1 @@
+GSD Calculator for drone enthusiasts, first TypeScript project.
