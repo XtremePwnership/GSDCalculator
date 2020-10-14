@@ -2,7 +2,7 @@ html{
     background-color: lightgray;
 }
 
-.row,label { /* these two were overlowing to cause tiny horizontl scroll, so doing this */
+.row,label { /* these two were overlowing to cause tiny horizontl scroll, so doing this  */
     max-width: 100%;
 }
 
